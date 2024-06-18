@@ -1,2 +1,2 @@
 # Code-Interpretation-Chatbot
-Utilizing Chatbot to interprete domain specific source code
+Built a chatbot leveraging RAG and LLM to analyze domain-specific source code.
