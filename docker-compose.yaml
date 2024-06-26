@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  chatbot-app:
+    build: ./
+    image: chatbot-app
+    container_name: chatbot-instance
+    ports:
+      - '5000:5000/tcp'
+    env_file:
+      - .env
+    command: ["./entrypoint.sh"]
