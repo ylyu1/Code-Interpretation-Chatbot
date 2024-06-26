@@ -30,7 +30,7 @@
    ```bash
    sudo docker --version
    ```
-6. **Manage Docker as a Non-root User**
+6. **Add EC2-User to the Docker's User group**
    ```bash
    sudo usermod -aG docker $USER
    ```
