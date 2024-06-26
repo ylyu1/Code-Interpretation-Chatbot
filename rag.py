@@ -6,7 +6,7 @@ from pinecone import Pinecone
 from langchain_pinecone import PineconeVectorStore
 
 pinecone_api_key = os.getenv("PINECONE_API_KEY")
-pc = Pinecone(api_key=pinecone_api_key)
+pc = Pinecone()
 
 index_name = 'lightyear'
 index = pc.Index(index_name)
