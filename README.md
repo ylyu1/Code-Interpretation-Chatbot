@@ -5,7 +5,10 @@
 - **Deployment:** Containerized with Docker for deployment on cloud platforms or local servers.
 - **Web Interface:** Deployed as a web-based chatbot using Flask.
 
+### Game Code Base
+The model took the source code of the game as input, and serves as assistant to answer questions about the code base, inner working of the game engine, and give suggestion on how to extend it. 
 
+[Light Years Game](https://github.com/TutLeeUdemy/LightYears.git)
 ## Instructions for Deploying on AWS EC2
 
 ### Installing Docker on Amazon Linux 2
