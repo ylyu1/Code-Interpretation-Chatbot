@@ -1,77 +1,8 @@
 ## Project Overview
-
-- **Chatbot Application:** Developed using a Large Language Model (LLM) integrated with Retrieval-Augmented Generation (RAG) for domain-specific source code analysis.
-- **Vector Database:** Utilizes OpenAI Embeddings and Pinecone Vector Database to convert source code into searchable vectors for improved information access.
-- **Deployment:** Containerized with Docker for deployment on cloud platforms or local servers.
-- **Web Interface:** Deployed as a web-based chatbot using Flask.
-
-### Game Code Base
-The model took the source code of the game as input, and serves as assistant to answer questions about the code base, inner working of the game engine, and give suggestion on how to extend it. 
-
-[Light Years Game](https://github.com/TutLeeUdemy/LightYears.git)
-## Instructions for Deploying on AWS EC2
-
-### Installing Docker on Amazon Linux 2
-
-1. **Update Your System:**
-   
-   ```bash
-   sudo yum update -y
-   ```
-2. **Install Docker**
-   ```bash
-   sudo yum install docker -y
-   ```
-3. **Start and Enable Docker**
-   ```bash
-   sudo systemctl start docker
-   ```
-   ```bash
-   sudo systemctl enable docker
-   ```
-5. **Verify Docker Installation**
-   ```bash
-   sudo docker --version
-   ```
-6. **Add EC2-User to the Docker's User group**
-   ```bash
-   sudo usermod -aG docker $USER
-   ```
-7. **Log out and Log Back in for the Changes to Take Effect**
-   ```bash
-   exit
-   ```
-   ```bash
-   ssh -i /path/to/your/private-key.pem ec2-user@ec2-instance-public-ip
-   ```
-
-### Installing Docker Compose on Amazon Linux 2
-
-1. **Download the Docker Compose binary**
-   
-   ```bash
-   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-   ```
-
-2. **Make the Downloaded Binary Executable**
-   ```bash
-   sudo chmod +x /usr/local/bin/docker-compose
-   ```
-
-3. **Verify Installation**
-   ```bash
-   docker-compose --version
-   ```
-
-### Starting the Flask Web Service
-
-1. **Building the Docker Image Using Docker Compose**
-   
-   ```bash
-   docker-compose build
-   ```
-
-2. **Running the Docker Container**
-   ```bash
-   docker-compose up
-   ```
+This chatbot serves developers by interpreting complex code bases, effectively reducing the time required for reading and understanding by 50%. It uses the code base of a 2D scrolling shooter spaceship fighting game as a learning source and acts as an assistant to answer questions about the code, the inner workings of the game engine, and provides suggestions for extending its functionality.
+### Major Components of the Project:
+- **Vector Database**: Utilizes OpenAI embeddings within the Pinecone Vector Database to convert source code into searchable vectors, enabling efficient query handling and code retrieval.
+- **Retrieval-Augmented Generation (RAG)**: Integrates LangChain with OpenAI's GPT-3.5 Turbo to refine prompts in Retrieval-Augmented Generation, enhancing the analysis of domain-specific source code.
+- **Deployment**: The application is deployed as a full-stack Flask application on AWS EC2 and is containerized using Docker, ensuring scalable and robust access to the service.
+## Game Code Base
+[Light Years Game 🛩️](https://github.com/TutLeeUdemy/LightYears.git)
