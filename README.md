@@ -7,4 +7,4 @@ This chatbot serves developers by interpreting complex code bases, effectively r
 ## Game Code Base
 [Light Years Game 🛩️](https://github.com/TutLeeUdemy/LightYears.git)
 ## Chatbot
-[Chatbot Demo](chatbotdemo.png)
+![Chatbot Demo](chatbotdemo.png)
