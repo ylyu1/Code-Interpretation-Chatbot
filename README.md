@@ -6,3 +6,5 @@ This chatbot serves developers by interpreting complex code bases, effectively r
 - **Deployment**: The application is deployed as a full-stack Flask application on AWS EC2 and is containerized using Docker, ensuring scalable and robust access to the service.
 ## Game Code Base
 [Light Years Game 🛩️](https://github.com/TutLeeUdemy/LightYears.git)
+## Chatbot
+[Chatbot Demo](chatbotdemo.png)
